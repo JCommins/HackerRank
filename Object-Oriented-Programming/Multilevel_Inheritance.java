@@ -2,9 +2,6 @@ class Animals{
     void eat(){
         System.out.println("eating");
     }  
-    void piss(){
-    	System.out.println("pissing"); 
-    }
 }  
 
 class Dog extends Animals{  
@@ -27,6 +24,5 @@ class Multilevel_Inheritance{
         baby_dog.weep();  
         baby_dog.bark();  
         baby_dog.eat();
-        baby_dog.piss(); 
     }
 }  
