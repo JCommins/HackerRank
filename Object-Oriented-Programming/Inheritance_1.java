@@ -1,9 +1,8 @@
 /**
- * 
- * @author JustinCommins
  *
- *
- *Using inheritance, one class can acquire the properties of others. Consider the following Animal class:
+Problem: 
+
+Using inheritance, one class can acquire the properties of others. Consider the following Animal class:
 
 class Animal{
     void walk(){
@@ -11,7 +10,8 @@ class Animal{
     }
 }
 
-This class has only one method, walk. Next, we want to create a Bird class that also has a fly method. We do this using extends keyword:
+This class has only one method, walk. Next, we want to create a Bird class that also has a fly method. 
+We do this using extends keyword:
 
 class Bird extends Animal {
     void fly() {
@@ -45,32 +45,27 @@ I am singing
 
  */
 	
-	class Animal {
-		
-		void walk(){
-			System.out.println("I am walking"); 
-		}
-	}
+class Animal{		
+   void walk(){
+      System.out.println("I am walking"); 
+   }
+}
 	
-	class Bird extends Animal{
+class Bird extends Animal{		
+   void fly(){
+      System.out.println("I am flying"); 
+   }
 		
-		void fly(){
-			System.out.println("I am flying"); 
-		}
-		
-		void sing(){
-			System.out.println("I am singing"); 
-		}
-	}
+   void sing(){
+      System.out.println("I am singing"); 
+   }
+}
 
-public class Inheritance_1 {
-	
-	public static void main(String[] args) {
-	
-		Bird bird = new Bird(); 
-		bird.walk();
-		bird.fly(); 
-		bird.sing();
-	}
-
+public class Inheritance{	
+   public static void main(String[] args){	
+      Bird bird = new Bird(); 
+      bird.walk();
+      bird.fly(); 
+      bird.sing();
+   }
 }
